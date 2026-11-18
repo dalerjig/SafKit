@@ -1,0 +1,10 @@
+.local/
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npmrc
+.env
+.env.*
+!.env.example
+*.tgz

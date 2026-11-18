@@ -1,0 +1,27 @@
+version: "3"
+
+tasks:
+  default:
+    desc: "Показать доступные локальные задачи"
+    cmds:
+      - task --list
+
+  dev:
+    desc: "Запустить демо SafKit"
+    cmds:
+      - npm run dev
+
+  package:check:
+    desc: "Проверить TypeScript"
+    cmds:
+      - npm run validate
+
+  package:build:
+    desc: "Проверить и собрать библиотеку SafKit"
+    cmds:
+      - npm run build_with_check
+
+  package:pack:
+    desc: "Проверить состав npm-пакета без публикации"
+    cmds:
+      - npm pack --dry-run
